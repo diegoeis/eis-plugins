@@ -1,0 +1,30 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "eis-plugins",
+  "owner": {
+    "name": "Diego Eis"
+  },
+  "metadata": {
+    "description": "Plugins do Diego Eis para gestão de times e produção de conteúdo."
+  },
+  "plugins": [
+    {
+      "name": "eis-manager-assistant",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/diegoeis/eis-manager-plugin.git",
+        "path": "plugin"
+      },
+      "description": "Status reports com fontes verificáveis para líderes acompanharem times, fóruns e pessoas."
+    },
+    {
+      "name": "eis-content-builder",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/diegoeis/eis-content-builder.git",
+        "path": "plugin"
+      },
+      "description": "Assistente de escrita que aprende sua voz e produz conteúdo para blog, LinkedIn, newsletter e outros canais."
+    }
+  ]
+}
