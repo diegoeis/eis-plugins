@@ -59,7 +59,8 @@ Repositório: [diegoeis/eis-setup-plugin](https://github.com/diegoeis/eis-setup-
 
 | Skill | O que faz |
 | --- | --- |
-| [`init`](https://github.com/diegoeis/eis-setup-plugin/tree/main/src/skills/init) | Cria um projeto de plugin novo com `src/`, `docs/`, `scripts/pack.sh`, README, AGENTS.md e CLAUDE.md, pronto para receber as skills. |
+| [`skel-init`](https://github.com/diegoeis/eis-setup-plugin/tree/main/src/skills/skel-init) | Cria um projeto de plugin novo com `src/`, `docs/`, `scripts/pack.sh`, README, AGENTS.md e CLAUDE.md, pronto para receber as skills. |
+| [`skel-build`](https://github.com/diegoeis/eis-setup-plugin/tree/main/src/skills/skel-build) | Sobe a versão do plugin (patch por padrão) e roda o `pack.sh` para gerar `dist/vX.Y.Z/` e o zip. |
 
 ## Adicionar um plugin
 
