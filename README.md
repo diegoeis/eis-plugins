@@ -10,7 +10,7 @@ No Claude Code:
 /plugin marketplace add diegoeis/eis-plugins
 /plugin install eis-manager-assistant@eis-plugins
 /plugin install eis-content-builder@eis-plugins
-/plugin install eis-setup-plugin@eis-plugins
+/plugin install eis-plugin-skeleton@eis-plugins
 ```
 
 Para receber versões novas:
@@ -27,7 +27,7 @@ Ou ligue a atualização automática em `/plugin` → Marketplaces → `eis-plug
 | --- | --- | --- |
 | `eis-manager-assistant` | Status reports with verifiable sources for leaders who follow teams, forums and people. | [diegoeis/eis-manager-plugin](https://github.com/diegoeis/eis-manager-plugin) |
 | `eis-content-builder` | Writing assistant that learns your voice and produces content for blogs, LinkedIn, newsletters and other channels. | [diegoeis/eis-content-builder](https://github.com/diegoeis/eis-content-builder) |
-| `eis-setup-plugin` | Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/. | [diegoeis/eis-setup-plugin](https://github.com/diegoeis/eis-setup-plugin) |
+| `eis-plugin-skeleton` | Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/. | [diegoeis/eis-plugin-skeleton](https://github.com/diegoeis/eis-plugin-skeleton) |
 
 ### eis-manager-assistant
 
@@ -53,15 +53,15 @@ Repositório: [diegoeis/eis-content-builder](https://github.com/diegoeis/eis-con
 | [`writer-index`](https://github.com/diegoeis/eis-content-builder/tree/main/plugin/skills/writer-index) | Cria ou atualiza o índice de artigos do workspace. |
 | [`writer-save`](https://github.com/diegoeis/eis-content-builder/tree/main/plugin/skills/writer-save) | Move um rascunho para o destino final: pasta, CMS ou agendamento. |
 
-### eis-setup-plugin
+### eis-plugin-skeleton
 
-Repositório: [diegoeis/eis-setup-plugin](https://github.com/diegoeis/eis-setup-plugin)
+Repositório: [diegoeis/eis-plugin-skeleton](https://github.com/diegoeis/eis-plugin-skeleton)
 
 | Skill | O que faz |
 | --- | --- |
-| [`skel-init`](https://github.com/diegoeis/eis-setup-plugin/tree/main/src/skills/skel-init) | Cria um projeto de plugin novo com `src/`, `docs/`, `scripts/pack.sh`, README, AGENTS.md e CLAUDE.md, pronto para receber as skills. |
-| [`skel-migrate`](https://github.com/diegoeis/eis-setup-plugin/tree/main/src/skills/skel-migrate) | Move um plugin que já existe para essa estrutura: mostra o plano, espera aprovação, só move arquivos existentes e cria os que faltam. |
-| [`skel-build`](https://github.com/diegoeis/eis-setup-plugin/tree/main/src/skills/skel-build) | Sobe a versão do plugin (patch por padrão) e roda o `pack.sh` para gerar `dist/vX.Y.Z/` e o zip. |
+| [`skel-init`](https://github.com/diegoeis/eis-plugin-skeleton/tree/main/src/skills/skel-init) | Cria um projeto de plugin novo com `src/`, `docs/`, `scripts/pack.sh`, README, AGENTS.md e CLAUDE.md, pronto para receber as skills. |
+| [`skel-migrate`](https://github.com/diegoeis/eis-plugin-skeleton/tree/main/src/skills/skel-migrate) | Move um plugin que já existe para essa estrutura: mostra o plano, espera aprovação, só move arquivos existentes e cria os que faltam. |
+| [`skel-build`](https://github.com/diegoeis/eis-plugin-skeleton/tree/main/src/skills/skel-build) | Sobe a versão do plugin (patch por padrão) e roda o `pack.sh` para gerar `dist/vX.Y.Z/` e o zip. |
 
 ## Adicionar um plugin
 

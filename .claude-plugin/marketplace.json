@@ -26,13 +26,16 @@
       "description": "Writing assistant that learns your voice and produces content for blogs, LinkedIn, newsletters and other channels."
     },
     {
-      "name": "eis-setup-plugin",
+      "name": "eis-plugin-skeleton",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/diegoeis/eis-setup-plugin.git",
+        "url": "https://github.com/diegoeis/eis-plugin-skeleton.git",
         "path": "src"
       },
       "description": "Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/."
     }
-  ]
+  ],
+  "renames": {
+    "eis-setup-plugin": "eis-plugin-skeleton"
+  }
 }
