@@ -1,0 +1,41 @@
+{
+  "name": "eis-plugins",
+  "owner": {
+    "name": "Diego Eis"
+  },
+  "metadata": {
+    "description": "Diego Eis's plugins for team management and content creation."
+  },
+  "plugins": [
+    {
+      "name": "eis-manager-assistant",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/diegoeis/eis-manager-plugin.git",
+        "path": "plugin"
+      },
+      "description": "Status reports with verifiable sources for leaders who follow teams, forums and people."
+    },
+    {
+      "name": "eis-content-builder",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/diegoeis/eis-content-builder.git",
+        "path": "plugin"
+      },
+      "description": "Writing assistant that learns your voice and produces content for blogs, LinkedIn, newsletters and other channels."
+    },
+    {
+      "name": "eis-plugin-skeleton",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/diegoeis/eis-plugin-skeleton.git",
+        "path": "src"
+      },
+      "description": "Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/."
+    }
+  ],
+  "renames": {
+    "eis-setup-plugin": "eis-plugin-skeleton"
+  }
+}
