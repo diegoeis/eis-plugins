@@ -25,9 +25,9 @@ Ou ligue a atualização automática em `/plugin` → Marketplaces → `eis-plug
 
 | Plugin | O que faz | Repositório |
 | --- | --- | --- |
-| `eis-manager-assistant` | Status reports com fontes verificáveis para líderes acompanharem times, fóruns e pessoas. | [diegoeis/eis-manager-plugin](https://github.com/diegoeis/eis-manager-plugin) |
-| `eis-content-builder` | Assistente de escrita que aprende sua voz e produz conteúdo para vários canais. | [diegoeis/eis-content-builder](https://github.com/diegoeis/eis-content-builder) |
-| `eis-setup-plugin` | Cria a estrutura de pastas de um projeto de plugin para Claude Code e Cowork: src/ como raiz do plugin, docs/, scripts/pack.sh e builds versionados em dist/. | [diegoeis/eis-setup-plugin](https://github.com/diegoeis/eis-setup-plugin) |
+| `eis-manager-assistant` | Status reports with verifiable sources for leaders who follow teams, forums and people. | [diegoeis/eis-manager-plugin](https://github.com/diegoeis/eis-manager-plugin) |
+| `eis-content-builder` | Writing assistant that learns your voice and produces content for blogs, LinkedIn, newsletters and other channels. | [diegoeis/eis-content-builder](https://github.com/diegoeis/eis-content-builder) |
+| `eis-setup-plugin` | Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/. | [diegoeis/eis-setup-plugin](https://github.com/diegoeis/eis-setup-plugin) |
 
 ### eis-manager-assistant
 

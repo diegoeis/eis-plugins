@@ -4,7 +4,7 @@
     "name": "Diego Eis"
   },
   "metadata": {
-    "description": "Plugins do Diego Eis para gestão de times e produção de conteúdo."
+    "description": "Diego Eis's plugins for team management and content creation."
   },
   "plugins": [
     {
@@ -14,7 +14,7 @@
         "url": "https://github.com/diegoeis/eis-manager-plugin.git",
         "path": "plugin"
       },
-      "description": "Status reports com fontes verificáveis para líderes acompanharem times, fóruns e pessoas."
+      "description": "Status reports with verifiable sources for leaders who follow teams, forums and people."
     },
     {
       "name": "eis-content-builder",
@@ -23,7 +23,7 @@
         "url": "https://github.com/diegoeis/eis-content-builder.git",
         "path": "plugin"
       },
-      "description": "Assistente de escrita que aprende sua voz e produz conteúdo para blog, LinkedIn, newsletter e outros canais."
+      "description": "Writing assistant that learns your voice and produces content for blogs, LinkedIn, newsletters and other channels."
     },
     {
       "name": "eis-setup-plugin",
@@ -32,7 +32,7 @@
         "url": "https://github.com/diegoeis/eis-setup-plugin.git",
         "path": "src"
       },
-      "description": "Cria a estrutura de pastas de um projeto de plugin para Claude Code e Cowork: src/ como raiz do plugin, docs/, scripts/pack.sh e builds versionados em dist/."
+      "description": "Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/."
     }
   ]
 }
