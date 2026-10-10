@@ -10,6 +10,7 @@ No Claude Code:
 /plugin marketplace add diegoeis/eis-plugins
 /plugin install eis-manager-assistant@eis-plugins
 /plugin install eis-content-builder@eis-plugins
+/plugin install eis-setup-plugin@eis-plugins
 ```
 
 Para receber versões novas:
@@ -26,6 +27,7 @@ Ou ligue a atualização automática em `/plugin` → Marketplaces → `eis-plug
 | --- | --- | --- |
 | `eis-manager-assistant` | Status reports com fontes verificáveis para líderes acompanharem times, fóruns e pessoas. | [diegoeis/eis-manager-plugin](https://github.com/diegoeis/eis-manager-plugin) |
 | `eis-content-builder` | Assistente de escrita que aprende sua voz e produz conteúdo para vários canais. | [diegoeis/eis-content-builder](https://github.com/diegoeis/eis-content-builder) |
+| `eis-setup-plugin` | Cria a estrutura de pastas de um projeto de plugin para Claude Code e Cowork: src/ como raiz do plugin, docs/, scripts/pack.sh e builds versionados em dist/. | [diegoeis/eis-setup-plugin](https://github.com/diegoeis/eis-setup-plugin) |
 
 ### eis-manager-assistant
 
@@ -50,6 +52,14 @@ Repositório: [diegoeis/eis-content-builder](https://github.com/diegoeis/eis-con
 | [`writer-opinion-mine`](https://github.com/diegoeis/eis-content-builder/tree/main/plugin/skills/writer-opinion-mine) | Entrevista o autor para montar ou refinar o mapa de opiniões. |
 | [`writer-index`](https://github.com/diegoeis/eis-content-builder/tree/main/plugin/skills/writer-index) | Cria ou atualiza o índice de artigos do workspace. |
 | [`writer-save`](https://github.com/diegoeis/eis-content-builder/tree/main/plugin/skills/writer-save) | Move um rascunho para o destino final: pasta, CMS ou agendamento. |
+
+### eis-setup-plugin
+
+Repositório: [diegoeis/eis-setup-plugin](https://github.com/diegoeis/eis-setup-plugin)
+
+| Skill | O que faz |
+| --- | --- |
+| [`init`](https://github.com/diegoeis/eis-setup-plugin/tree/main/src/skills/init) | Cria um projeto de plugin novo com `src/`, `docs/`, `scripts/pack.sh`, README, AGENTS.md e CLAUDE.md, pronto para receber as skills. |
 
 ## Adicionar um plugin
 
