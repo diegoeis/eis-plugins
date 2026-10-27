@@ -12,7 +12,7 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/diegoeis/eis-manager-plugin.git",
-        "path": "plugin"
+        "path": "src"
       },
       "description": "Status reports with verifiable sources for leaders who follow teams, forums and people."
     },

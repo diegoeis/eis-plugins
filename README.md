@@ -37,9 +37,9 @@ Repositório: [diegoeis/eis-manager-plugin](https://github.com/diegoeis/eis-mana
 
 | Skill | O que faz |
 | --- | --- |
-| [`mgr-setup`](https://github.com/diegoeis/eis-manager-plugin/tree/master/plugin/skills/mgr-setup) | Cria ou amplia o workspace: times, fóruns, pessoas, tópicos e fontes. |
-| [`mgr-status-report`](https://github.com/diegoeis/eis-manager-plugin/tree/master/plugin/skills/mgr-status-report) | Gera o status report de um time, fórum ou pessoa a partir do tracker, do messenger e das reuniões, com cada fato citado. |
-| [`mgr-topic`](https://github.com/diegoeis/eis-manager-plugin/tree/master/plugin/skills/mgr-topic) | Cria, lista, remove e arquiva tópicos do workspace. |
+| [`mgr-setup`](https://github.com/diegoeis/eis-manager-plugin/tree/master/src/skills/mgr-setup) | Cria ou amplia o workspace: times, fóruns, pessoas, tópicos e fontes. |
+| [`mgr-status-report`](https://github.com/diegoeis/eis-manager-plugin/tree/master/src/skills/mgr-status-report) | Gera o status report de um time, fórum ou pessoa a partir do tracker, do messenger e das reuniões, com cada fato citado. |
+| [`mgr-topic`](https://github.com/diegoeis/eis-manager-plugin/tree/master/src/skills/mgr-topic) | Cria, lista, remove e arquiva tópicos do workspace. |
 
 ### eis-content-builder
 
