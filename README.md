@@ -11,6 +11,7 @@ No Claude Code:
 /plugin install eis-manager-assistant@eis-plugins
 /plugin install eis-content-builder@eis-plugins
 /plugin install eis-plugin-skeleton@eis-plugins
+/plugin install eis-daily-brief@eis-plugins
 ```
 
 Para receber versões novas:
@@ -28,6 +29,7 @@ Ou ligue a atualização automática em `/plugin` → Marketplaces → `eis-plug
 | `eis-manager-assistant` | Status reports with verifiable sources for leaders who follow teams, forums and people. | [diegoeis/eis-manager-plugin](https://github.com/diegoeis/eis-manager-plugin) |
 | `eis-content-builder` | Writing assistant that learns your voice and produces content for blogs, LinkedIn, newsletters and other channels. | [diegoeis/eis-content-builder](https://github.com/diegoeis/eis-content-builder) |
 | `eis-plugin-skeleton` | Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/. | [diegoeis/eis-plugin-skeleton](https://github.com/diegoeis/eis-plugin-skeleton) |
+| `eis-daily-brief` | Daily brief note from calendar, messenger, e-mail, meeting notes and reports: tasks, pending issues by person and important topics, with tasks closed automatically when the source shows they were done. | [diegoeis/eis-daily-brief](https://github.com/diegoeis/eis-daily-brief) |
 
 ### eis-manager-assistant
 
@@ -62,6 +64,15 @@ Repositório: [diegoeis/eis-plugin-skeleton](https://github.com/diegoeis/eis-plu
 | [`skel-init`](https://github.com/diegoeis/eis-plugin-skeleton/tree/main/src/skills/skel-init) | Cria um projeto de plugin novo com `src/`, `docs/`, `scripts/pack.sh`, README, AGENTS.md e CLAUDE.md, pronto para receber as skills. |
 | [`skel-migrate`](https://github.com/diegoeis/eis-plugin-skeleton/tree/main/src/skills/skel-migrate) | Move uma pasta que já existe (plugin, skill ou scripts) para essa estrutura: mostra um plano curto, espera aprovação, só move arquivos e cria os que faltam, inclusive o `plugin.json`. |
 | [`skel-build`](https://github.com/diegoeis/eis-plugin-skeleton/tree/main/src/skills/skel-build) | Sobe a versão do plugin (patch por padrão) e roda o `pack.sh` para gerar `dist/vX.Y.Z/` e o zip. |
+
+### eis-daily-brief
+
+Repositório: [diegoeis/eis-daily-brief](https://github.com/diegoeis/eis-daily-brief)
+
+| Skill | O que faz |
+| --- | --- |
+| [`brief-setup`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-setup) | Cria, mostra ou edita o `eis-daily-brief.json`: quem é o usuário, idioma, pasta das notas, fontes ligadas, pessoas e canais prioritários, pastas de reuniões e reports. |
+| [`brief-generate`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-generate) | Gera a nota do dia com agenda, tarefas (novas e migradas, fechadas sozinhas quando a fonte mostra que foram feitas), pendências por pessoa, tópicos importantes e concluídos. Roda sem perguntas, pode ser agendada. |
 
 ## Adicionar um plugin
 

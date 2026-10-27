@@ -33,6 +33,15 @@
         "path": "src"
       },
       "description": "Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/."
+    },
+    {
+      "name": "eis-daily-brief",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/diegoeis/eis-daily-brief.git",
+        "path": "src"
+      },
+      "description": "Daily brief note from calendar, messenger, e-mail, meeting notes and reports: tasks, pending issues by person and important topics, with tasks closed automatically when the source shows they were done."
     }
   ],
   "renames": {
