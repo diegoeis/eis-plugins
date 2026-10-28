@@ -41,7 +41,7 @@
         "url": "https://github.com/diegoeis/eis-daily-brief.git",
         "path": "src"
       },
-      "description": "Daily brief note from calendar, messenger, e-mail, meeting notes and reports: tasks, pending issues by person and important topics, with tasks closed automatically when the source shows they were done."
+      "description": "Daily brief note from calendar, messenger, e-mail, meeting notes and reports: tasks sorted by due date, pending issues by person and important topics, with tasks closed automatically when any source shows they were done. Runs again during the day to update the note, plus a local page to work the tasks."
     }
   ],
   "renames": {

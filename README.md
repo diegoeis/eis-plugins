@@ -29,7 +29,7 @@ Ou ligue a atualização automática em `/plugin` → Marketplaces → `eis-plug
 | `eis-manager-assistant` | Status reports with verifiable sources for leaders who follow teams, forums and people. | [diegoeis/eis-manager-plugin](https://github.com/diegoeis/eis-manager-plugin) |
 | `eis-content-builder` | Writing assistant that learns your voice and produces content for blogs, LinkedIn, newsletters and other channels. | [diegoeis/eis-content-builder](https://github.com/diegoeis/eis-content-builder) |
 | `eis-plugin-skeleton` | Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/. | [diegoeis/eis-plugin-skeleton](https://github.com/diegoeis/eis-plugin-skeleton) |
-| `eis-daily-brief` | Daily brief note from calendar, messenger, e-mail, meeting notes and reports: tasks, pending issues by person and important topics, with tasks closed automatically when the source shows they were done. | [diegoeis/eis-daily-brief](https://github.com/diegoeis/eis-daily-brief) |
+| `eis-daily-brief` | Daily brief note from calendar, messenger, e-mail, meeting notes and reports: tasks sorted by due date, pending issues by person and important topics, with tasks closed automatically when any source shows they were done. Runs again during the day to update the note, plus a local page to work the tasks. | [diegoeis/eis-daily-brief](https://github.com/diegoeis/eis-daily-brief) |
 
 ### eis-manager-assistant
 
@@ -71,8 +71,9 @@ Repositório: [diegoeis/eis-daily-brief](https://github.com/diegoeis/eis-daily-b
 
 | Skill | O que faz |
 | --- | --- |
-| [`brief-setup`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-setup) | Cria, mostra ou edita o `eis-daily-brief.json`: quem é o usuário, idioma, pasta das notas, fontes ligadas, pessoas e canais prioritários, pastas de reuniões e reports. |
-| [`brief-generate`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-generate) | Gera a nota do dia com agenda, tarefas (novas e migradas, fechadas sozinhas quando a fonte mostra que foram feitas), pendências por pessoa, tópicos importantes e concluídos. Roda sem perguntas, pode ser agendada. |
+| [`brief-setup`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-setup) | Cria, mostra ou edita o workspace `.eis-daily-brief/` na pasta que o usuário escolhe: `config.json` (quem é o usuário, idioma, pasta das notas, fontes ligadas, pessoas e canais prioritários, pastas de reuniões e reports), formato das tarefas e a cópia da página da daily. |
+| [`brief-generate`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-generate) | Gera a nota do dia com agenda, tarefas (novas e migradas, ordenadas por prazo, criação e prioridade), pendências por pessoa, tópicos importantes e concluídos. Quando a nota já existe, atualiza no lugar sem perder edições. Fecha tarefas com evidência na fonte ou numa busca dirigida (série da reunião, notas e DMs das pessoas, issues citadas), lendo só o que mudou desde a última execução. Roda sem perguntas, pode ser agendada. |
+| [`brief-view`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-view) | Abre a página local da daily: painel de tarefas (abertas, novas na semana, vencendo, atrasadas; filtros e ordenação) que grava cada mudança direto na nota. Gera a nota do dia antes, se ela não existir. |
 
 ## Adicionar um plugin
 
