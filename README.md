@@ -73,7 +73,7 @@ Repositório: [diegoeis/eis-daily-brief](https://github.com/diegoeis/eis-daily-b
 | --- | --- |
 | [`brief-setup`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-setup) | Cria, mostra ou edita o workspace `.eis-daily-brief/` na pasta que o usuário escolhe: `config.json` (quem é o usuário, idioma, pasta das notas, fontes ligadas, pessoas e canais prioritários, pastas de reuniões e reports), formato das tarefas e a cópia da página da daily. |
 | [`brief-generate`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-generate) | Gera a nota do dia com agenda, tarefas (novas e migradas, ordenadas por prazo, criação e prioridade), pendências por pessoa, tópicos importantes e concluídos. Quando a nota já existe, atualiza no lugar sem perder edições. Fecha tarefas com evidência na fonte ou numa busca dirigida (série da reunião, notas e DMs das pessoas, issues citadas), lendo só o que mudou desde a última execução. Roda sem perguntas, pode ser agendada. |
-| [`brief-view`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-view) | Abre a página local da daily: painel de tarefas (abertas, novas na semana, vencendo, atrasadas; filtros e ordenação) que grava cada mudança direto na nota. Gera a nota do dia antes, se ela não existir. |
+| [`brief-view`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-view) | Abre a página local da daily: painel de tarefas (abertas, novas na semana, vencendo, atrasadas; filtros e ordenação) que grava cada mudança direto na nota. Antes de abrir, roda o `brief-generate` (cria ou atualiza a nota do dia); `--no-generate` só abre. |
 
 ## Adicionar um plugin
 
