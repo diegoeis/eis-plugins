@@ -11,7 +11,7 @@ No Claude Code:
 /plugin install eis-manager-assistant@eis-plugins
 /plugin install eis-content-builder@eis-plugins
 /plugin install eis-plugin-skeleton@eis-plugins
-/plugin install eis-daily-brief@eis-plugins
+/plugin install eis-task-manager@eis-plugins
 ```
 
 Para receber versões novas:
@@ -29,7 +29,7 @@ Ou ligue a atualização automática em `/plugin` → Marketplaces → `eis-plug
 | `eis-manager-assistant` | Status reports with verifiable sources for leaders who follow teams, forums and people. | [diegoeis/eis-manager-plugin](https://github.com/diegoeis/eis-manager-plugin) |
 | `eis-content-builder` | Writing assistant that learns your voice and produces content for blogs, LinkedIn, newsletters and other channels. | [diegoeis/eis-content-builder](https://github.com/diegoeis/eis-content-builder) |
 | `eis-plugin-skeleton` | Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/. | [diegoeis/eis-plugin-skeleton](https://github.com/diegoeis/eis-plugin-skeleton) |
-| `eis-daily-brief` | Daily brief note from calendar, messenger, e-mail, meeting notes and reports: tasks sorted by due date, pending issues by person and important topics, with tasks closed automatically when any source shows they were done. Runs again during the day to update the note, plus a local page to work the tasks. | [diegoeis/eis-daily-brief](https://github.com/diegoeis/eis-daily-brief) |
+| `eis-task-manager` | Task manager for your tasks and obligations, built on a daily note from calendar, messenger, e-mail, meeting notes and reports: tasks sorted by due date, pending issues by person and important topics, with tasks closed automatically when any source shows they were done. Runs again during the day to update the note, plus a local page to work the tasks. | [diegoeis/eis-task-manager](https://github.com/diegoeis/eis-task-manager) |
 
 ### eis-manager-assistant
 
@@ -65,15 +65,15 @@ Repositório: [diegoeis/eis-plugin-skeleton](https://github.com/diegoeis/eis-plu
 | [`skel-migrate`](https://github.com/diegoeis/eis-plugin-skeleton/tree/main/src/skills/skel-migrate) | Move uma pasta que já existe (plugin, skill ou scripts) para essa estrutura: mostra um plano curto, espera aprovação, só move arquivos e cria os que faltam, inclusive o `plugin.json`. |
 | [`skel-build`](https://github.com/diegoeis/eis-plugin-skeleton/tree/main/src/skills/skel-build) | Sobe a versão do plugin (patch por padrão) e roda o `pack.sh` para gerar `dist/vX.Y.Z/` e o zip. |
 
-### eis-daily-brief
+### eis-task-manager
 
-Repositório: [diegoeis/eis-daily-brief](https://github.com/diegoeis/eis-daily-brief)
+Repositório: [diegoeis/eis-task-manager](https://github.com/diegoeis/eis-task-manager)
 
 | Skill | O que faz |
 | --- | --- |
-| [`brief-setup`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-setup) | Cria, mostra ou edita o workspace `.eis-daily-brief/` na pasta que o usuário escolhe: `config.json` (quem é o usuário, idioma, pasta das notas, fontes ligadas, pessoas e canais prioritários, pastas de reuniões e reports), formato das tarefas e a cópia da página da daily. |
-| [`brief-generate`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-generate) | Gera a nota do dia com agenda, tarefas (novas e migradas, ordenadas por prazo, criação e prioridade), pendências por pessoa, tópicos importantes e concluídos. Quando a nota já existe, atualiza no lugar sem perder edições. Fecha tarefas com evidência na fonte ou numa busca dirigida (série da reunião, notas e DMs das pessoas, issues citadas), lendo só o que mudou desde a última execução. Roda sem perguntas, pode ser agendada. |
-| [`brief-view`](https://github.com/diegoeis/eis-daily-brief/tree/main/src/skills/brief-view) | Abre a página local da daily: painel de tarefas (abertas, novas na semana, vencendo, atrasadas; filtros e ordenação) que grava cada mudança direto na nota. Antes de abrir, roda o `brief-generate` (cria ou atualiza a nota do dia); `--no-generate` só abre. |
+| [`tasks-setup`](https://github.com/diegoeis/eis-task-manager/tree/main/src/skills/tasks-setup) | Cria, mostra ou edita o workspace `.eis-task-manager/` na pasta que o usuário escolhe: `config.json` (quem é o usuário, idioma, pasta das notas, fontes ligadas, pessoas e canais prioritários, pastas de reuniões e reports), formato das tarefas e a cópia da página da daily. |
+| [`tasks-update`](https://github.com/diegoeis/eis-task-manager/tree/main/src/skills/tasks-update) | Gera a nota do dia com agenda, tarefas (novas e migradas, ordenadas por prazo, criação e prioridade), pendências por pessoa, tópicos importantes e concluídos. Quando a nota já existe, atualiza no lugar sem perder edições. Fecha tarefas com evidência na fonte ou numa busca dirigida (série da reunião, notas e DMs das pessoas, issues citadas), lendo só o que mudou desde a última execução. Roda sem perguntas, pode ser agendada. |
+| [`tasks-view`](https://github.com/diegoeis/eis-task-manager/tree/main/src/skills/tasks-view) | Abre a página local da daily: painel de tarefas (abertas, novas na semana, vencendo, atrasadas; filtros e ordenação) que grava cada mudança direto na nota. Antes de abrir, roda o `tasks-update` (cria ou atualiza a nota do dia); `--no-generate` só abre. |
 
 ## Adicionar um plugin
 

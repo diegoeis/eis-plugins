@@ -35,16 +35,17 @@
       "description": "Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/."
     },
     {
-      "name": "eis-daily-brief",
+      "name": "eis-task-manager",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/diegoeis/eis-daily-brief.git",
+        "url": "https://github.com/diegoeis/eis-task-manager.git",
         "path": "src"
       },
-      "description": "Daily brief note from calendar, messenger, e-mail, meeting notes and reports: tasks sorted by due date, pending issues by person and important topics, with tasks closed automatically when any source shows they were done. Runs again during the day to update the note, plus a local page to work the tasks."
+      "description": "Task manager for your tasks and obligations, built on a daily note from calendar, messenger, e-mail, meeting notes and reports: tasks sorted by due date, pending issues by person and important topics, with tasks closed automatically when any source shows they were done. Runs again during the day to update the note, plus a local page to work the tasks."
     }
   ],
   "renames": {
-    "eis-setup-plugin": "eis-plugin-skeleton"
+    "eis-setup-plugin": "eis-plugin-skeleton",
+    "eis-daily-brief": "eis-task-manager"
   }
 }
