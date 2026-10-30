@@ -48,6 +48,18 @@ class EisOps(unittest.TestCase):
         self.assertTrue((ops / "other").is_dir())
         self.assertEqual(self.run_cmd("find")["status"], "found")
 
+    def test_pages_menu(self):
+        self.run_cmd("init", str(self.tmp))
+        ops = self.tmp / "eis-ops"
+        self.run_cmd("register", "--plugin", "eis-task-manager", "--desc", "T", "--label", "Task Manager", "--page", "app/index.html")
+        self.run_cmd("register", "--plugin", "eis-writer", "--desc", "W")
+        marker = (ops / "task-manager" / "eis-ops-page.js").read_text()
+        self.assertIn('"label": "Task Manager"', marker)
+        self.assertFalse((ops / "writer" / "eis-ops-page.js").exists())
+        nav = (ops / "nav.js").read_text()
+        self.assertIn('var folders = ["task-manager", "writer"];', nav)
+        self.assertIn(r"/nav\.js([?#].*)?$/", nav)
+
     def test_stale_pointer(self):
         self.run_cmd("init", str(self.tmp / "x"))
         (self.tmp / "x" / "eis-ops" / "AGENTS.md").unlink()
