@@ -26,20 +26,22 @@ Ou ligue a atualização automática em `/plugin` → Marketplaces → `eis-plug
 
 | Plugin | O que faz | Repositório |
 | --- | --- | --- |
-| `eis-manager-assistant` | Status reports with verifiable sources for leaders who follow teams, forums and people. | [diegoeis/eis-manager-plugin](https://github.com/diegoeis/eis-manager-plugin) |
+| `eis-manager-assistant` | Status reports with verifiable sources for leaders who follow teams, forums and people. | [diegoeis/eis-manager-assistant](https://github.com/diegoeis/eis-manager-assistant) |
 | `eis-content-builder` | Writing assistant that learns your voice and produces content for blogs, LinkedIn, newsletters and other channels. | [diegoeis/eis-content-builder](https://github.com/diegoeis/eis-content-builder) |
 | `eis-plugin-skeleton` | Creates the folder structure of a plugin project for Claude Code and Cowork: src/ as the plugin root, docs/, scripts/pack.sh and versioned builds in dist/. | [diegoeis/eis-plugin-skeleton](https://github.com/diegoeis/eis-plugin-skeleton) |
 | `eis-task-manager` | Task manager for your tasks and obligations, built on a daily note from calendar, messenger, e-mail, meeting notes and reports: tasks sorted by due date, pending issues by person and important topics, with tasks closed automatically when any source shows they were done. Runs again during the day to update the note, plus a local page to work the tasks. | [diegoeis/eis-task-manager](https://github.com/diegoeis/eis-task-manager) |
 
 ### eis-manager-assistant
 
-Repositório: [diegoeis/eis-manager-plugin](https://github.com/diegoeis/eis-manager-plugin)
+Repositório: [diegoeis/eis-manager-assistant](https://github.com/diegoeis/eis-manager-assistant)
 
 | Skill | O que faz |
 | --- | --- |
-| [`mgr-setup`](https://github.com/diegoeis/eis-manager-plugin/tree/master/src/skills/mgr-setup) | Cria ou amplia o workspace: times, fóruns, pessoas, tópicos e fontes. |
-| [`mgr-status-report`](https://github.com/diegoeis/eis-manager-plugin/tree/master/src/skills/mgr-status-report) | Gera o status report de um time, fórum ou pessoa a partir do tracker, do messenger e das reuniões, com cada fato citado. |
-| [`mgr-topic`](https://github.com/diegoeis/eis-manager-plugin/tree/master/src/skills/mgr-topic) | Cria, lista, remove e arquiva tópicos do workspace. |
+| [`mgr-setup`](https://github.com/diegoeis/eis-manager-assistant/tree/master/src/skills/mgr-setup) | Cria ou amplia o workspace: times, fóruns, pessoas, tópicos e fontes. |
+| [`mgr-status-report`](https://github.com/diegoeis/eis-manager-assistant/tree/master/src/skills/mgr-status-report) | Gera o status report de um time, fórum ou pessoa a partir do tracker, do messenger e das reuniões, com cada fato citado. |
+| [`mgr-topic`](https://github.com/diegoeis/eis-manager-assistant/tree/master/src/skills/mgr-topic) | Cria, lista, remove e arquiva tópicos do workspace. |
+
+Também roda no Hermes: `hermes plugins install diegoeis/eis-manager-assistant/src --enable`.
 
 ### eis-content-builder
 

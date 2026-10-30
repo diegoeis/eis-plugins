@@ -11,7 +11,7 @@
       "name": "eis-manager-assistant",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/diegoeis/eis-manager-plugin.git",
+        "url": "https://github.com/diegoeis/eis-manager-assistant.git",
         "path": "src"
       },
       "description": "Status reports with verifiable sources for leaders who follow teams, forums and people."
