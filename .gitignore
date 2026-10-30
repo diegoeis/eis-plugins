@@ -1,3 +1,5 @@
 .DS_Store
 # Plugins vivem nos próprios repos; clones locais aqui dentro não entram neste repo
 /eis-*/
+# exceto as regras comuns da pasta eis-ops
+!/eis-ops/
